@@ -694,7 +694,7 @@ cl_ult_losses &lt;- cl_ult(cum_link_ratios, cum_triangle)</code></pre>
 <div id="modelo-lineal-generalizado-mixto-overdispersed-poisson-con-enlace-logaritmico." class="section level4">
 <h4>Modelo lineal generalizado mixto: Overdispersed Poisson con enlace
 logaritmico.</h4>
-<p>Este modelo tradicional arroja los mismos resultados de estimacion de
+<p>Este modelo deberia arrojar los mismos resultados de estimacion de
 reservas IBNR que el modelo de Chain Ladder.</p>
 <pre class="r"><code># Ajuste del modelo
 glm_odp &lt;- glm(valor ~ desarrollo + accidente, family = statmod::tweedie(var.power = 1, link.power = 0), data_fit)
